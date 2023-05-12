@@ -1,1 +1,0 @@
-Letakkan asset stl 3D disini
