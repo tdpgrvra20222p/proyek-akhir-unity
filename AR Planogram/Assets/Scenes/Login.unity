@@ -136,7 +136,7 @@ GameObject:
   - component: {fileID: 120510175}
   - component: {fileID: 120510174}
   m_Layer: 5
-  m_Name: InputField (TMP)
+  m_Name: username
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -638,7 +638,7 @@ GameObject:
   - component: {fileID: 491724334}
   - component: {fileID: 491724333}
   m_Layer: 5
-  m_Name: InputField (TMP) (1)
+  m_Name: password
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2079,8 +2079,9 @@ GameObject:
   - component: {fileID: 2134380217}
   - component: {fileID: 2134380216}
   - component: {fileID: 2134380215}
+  - component: {fileID: 2134380218}
   m_Layer: 5
-  m_Name: Button
+  m_Name: btn_login
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2189,3 +2190,18 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2134380213}
   m_CullTransparentMesh: 1
+--- !u!114 &2134380218
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2134380213}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dac76ad36a8ebc041b213b1580b1d912, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  username: {fileID: 120510172}
+  Password: {fileID: 491724331}
+  btn_login: {fileID: 2134380215}
