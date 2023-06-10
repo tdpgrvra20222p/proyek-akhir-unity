@@ -11,6 +11,11 @@ public class DropdownList : MonoBehaviour
     public TMP_Dropdown dropdown;
     public string folderPath; // Path to the folder containing the files
 
+    void Awake()
+    {
+        PopulateDropdownOptions();
+    }
+
     void Start()
     {
         PopulateDropdownOptions();
@@ -20,10 +25,11 @@ public class DropdownList : MonoBehaviour
     {
         string[] filePaths = Directory.GetFiles("/3D Model/"); // Get an array of file paths in the folder
         List<string> fileNames = new List<string>();
-
+        
         // Extract the file names from the file paths
         foreach (string filePath in filePaths)
         {
+            Debug.Log(filePath);
             string fileName = Path.GetFileName(filePath);
             fileNames.Add(fileName);
         }
