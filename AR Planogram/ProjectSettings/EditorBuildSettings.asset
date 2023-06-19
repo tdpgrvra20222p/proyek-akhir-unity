@@ -17,6 +17,9 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/ARScene.unity
     guid: 9fc0d4010bbf28b4594072e72b8655ab
+  - enabled: 1
+    path: Assets/Scenes/LoadSaved.unity
+    guid: e5b9402b0240ecd4eaee50dad3e2d5e4
   m_configObjects:
     com.unity.xr.management.loader_settings: {fileID: 11400000, guid: 14473ff74f19eb347823cc38c2f4bba9, type: 2}
     com.unity.xr.openxr.settings4: {fileID: 11400000, guid: 118faaf6dc8f63c4da470da1ade1dd18, type: 2}

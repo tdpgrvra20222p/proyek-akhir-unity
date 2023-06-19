@@ -9,12 +9,11 @@ using TMPro;
 public class DropdownList : MonoBehaviour
 {
     public TMP_Dropdown dropdown;
-    public string folderPath; // Path to the folder containing the files
-
-    void Awake()
-    {
-        PopulateDropdownOptions();
-    }
+    public GameObject parentObject;
+    // void Awake()
+    // {
+    //     PopulateDropdownOptions();
+    // }
 
     void Start()
     {
@@ -23,15 +22,22 @@ public class DropdownList : MonoBehaviour
 
     void PopulateDropdownOptions()
     {
-        string[] filePaths = Directory.GetFiles("/3D Model/"); // Get an array of file paths in the folder
-        List<string> fileNames = new List<string>();
-        
-        // Extract the file names from the file paths
-        foreach (string filePath in filePaths)
+        int childCount = parentObject.transform.childCount;
+        List<GameObject> itemList = new List<GameObject>();
+
+        for (int i = 0; i < childCount; i++)
         {
-            Debug.Log(filePath);
-            string fileName = Path.GetFileName(filePath);
-            fileNames.Add(fileName);
+            GameObject childObject = parentObject.transform.GetChild(i).gameObject;
+            itemList.Add(childObject);
+        }
+
+        List<string> fileNames = new List<string>();
+        fileNames.Add("");
+        // Extract the file names from the file paths
+        foreach (GameObject item in itemList)
+        {
+            // Debug.Log(item.name);
+            fileNames.Add(item.name);
         }
 
         dropdown.ClearOptions(); // Clear any existing options from the dropdown
