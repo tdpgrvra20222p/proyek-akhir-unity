@@ -7,6 +7,10 @@ TagManager:
   - DropArea
   - Placeable
   - Placed
+  - DropArea1
+  - DropArea2
+  - DropArea3
+  - DropArea0
   layers:
   - Default
   - TransparentFX

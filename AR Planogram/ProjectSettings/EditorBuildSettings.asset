@@ -20,6 +20,12 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/LoadSaved.unity
     guid: e5b9402b0240ecd4eaee50dad3e2d5e4
+  - enabled: 1
+    path: Assets/Scenes/Tutorial.unity
+    guid: 2766fdf0f4c902e43825a68bfc286be2
+  - enabled: 1
+    path: Assets/Scenes/About.unity
+    guid: 573869a15cdd60743a0af6fc16591f42
   m_configObjects:
     com.unity.xr.management.loader_settings: {fileID: 11400000, guid: 14473ff74f19eb347823cc38c2f4bba9, type: 2}
     com.unity.xr.openxr.settings4: {fileID: 11400000, guid: 118faaf6dc8f63c4da470da1ade1dd18, type: 2}

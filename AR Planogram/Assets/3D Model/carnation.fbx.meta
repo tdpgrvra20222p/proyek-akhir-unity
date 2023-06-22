@@ -3,7 +3,12 @@ guid: 3d1f159d5254da1468de468f51011fcd
 ModelImporter:
   serializedVersion: 21300
   internalIDToNameTable: []
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: susu-kental-manis-carnation-coffee-mate-klg-495g-539294
+    second: {fileID: 2800000, guid: 08d48c8089696d34ba3513cb119f791c, type: 3}
   materials:
     materialImportMode: 2
     materialName: 0

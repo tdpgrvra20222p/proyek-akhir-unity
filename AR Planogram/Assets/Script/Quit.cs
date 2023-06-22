@@ -9,6 +9,7 @@ public class Quit : MonoBehaviour
     public Button btn_quit;
     // Start is called before the first frame update
     public void Start () {
+        PlayerPrefs.DeleteAll();
         btn_quit.onClick.AddListener(AksiQuit);
     }
     public void AksiQuit () {

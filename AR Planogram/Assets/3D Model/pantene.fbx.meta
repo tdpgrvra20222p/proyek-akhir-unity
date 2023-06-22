@@ -3,7 +3,12 @@ guid: 6199cfb5555dffc41a74f9451eaef1d2
 ModelImporter:
   serializedVersion: 21300
   internalIDToNameTable: []
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: product_1627454845_21271_pant_800x800
+    second: {fileID: 2800000, guid: 85a838e09379ba5478d461ad7de68b35, type: 3}
   materials:
     materialImportMode: 2
     materialName: 0
